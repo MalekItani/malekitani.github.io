@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: <a href='uw.edu'>University of Washington</a>
+subtitle: University of Washington <a href='https://ece.uw.edu'>ECE</a>/<a href='https://cs.washington.edu'>CSE</a>
 
 profile:
   align: right
