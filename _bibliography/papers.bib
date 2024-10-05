@@ -5,22 +5,28 @@
   title     = {Target conversation extraction: Source separation using turn-taking dynamics},
   author    = {Chen, Tuochao and Wang, Qirui and Wu, Bohan and Itani, Malek and Eskimez, Emre Sefik and Yoshioka, Takuya and Gollakota, Shyamnath},
   year      = {2024},
-  booktitle = {Interspeech 2024},
+  booktitle = {Interspeech},
   pages     = {3550--3554},
   doi       = {10.21437/Interspeech.2024-225},
   issn      = {2958-1796},
-  preview = {tce.png}
+  abstract = {Extracting the speech of participants in a conversation amidst interfering speakers and noise presents a challenging problem. In this paper, we introduce the novel task of target conversation extraction, where the goal is to extract the audio of a target conversation based on the speaker embedding of one of its participants. To accomplish this, we propose leveraging temporal patterns inherent in human conversations, particularly turn-taking dynamics, which uniquely characterize speakers engaged in conversation and distinguish them from interfering speakers and noise. Using neural networks, we show the feasibility of our approach on English and Mandarin conversation datasets. In the presence of interfering speakers, our results show an 8.19 dB improvement in signal-to-noise ratio for 2-speaker conversations and a 7.92 dB improvement for 2-4-speaker conversations. Code, dataset available at this https URL.},
+  preview = {tce.png},
+  pdf = {tce.pdf},
+  website = {https://tce.cs.washington.edu/},
 }
 
 @inproceedings{srinivas24_interspeech,
   title     = {Knowledge boosting during low-latency inference},
   author    = {Srinivas, Vidya and Itani, Malek and Chen, Tuochao and Eskimez, Sefik Emre and Yoshioka, Takuya and Gollakota, Shyamnath},
   year      = {2024},
-  booktitle = {Interspeech 2024},
+  booktitle = {Interspeech},
   pages     = {4338--4342},
   doi       = {10.21437/Interspeech.2024-331},
   issn      = {2958-1796},
-  preview = {knowledgeboosting.png}
+  abstract = {Models for low-latency, streaming applications could benefit from the knowledge capacity of larger models, but edge devices cannot run these models due to resource constraints. A possible solution is to transfer hints during inference from a large model running remotely to a small model running on-device. However, this incurs a communication delay that breaks real-time requirements and does not guarantee that both models will operate on the same data at the same time. We propose knowledge boosting, a novel technique that allows a large model to operate on time-delayed input during inference, while still boosting small model performance. Using a streaming neural network that processes 8 ms chunks, we evaluate different speech separation and enhancement tasks with communication delays of up to six chunks or 48 ms. Our results show larger gains where the performance gap between the small and large models is wide, demonstrating a promising method for large-small model collaboration for low-latency applications. Code, dataset, and audio samples available at this https URL.},
+  preview = {knowledgeboosting.png},
+  pdf = {knowledgeboosting.pdf},
+  website = {https://knowledgeboosting.cs.washington.edu/},
 }
 
 @inproceedings{10.1145/3613904.3642057,
@@ -40,7 +46,9 @@ keywords = {Augmented hearing, auditory perception, spatial computing},
 location = {<conf-loc>, <city>Honolulu</city>, <state>HI</state>, <country>USA</country>, </conf-loc>},
 series = {CHI '24},
 selected = {true},
-preview = {lookoncetohear.png}
+preview = {lookoncetohear.png},
+pdf = {lookoncetohear.pdf},
+website = {https://tsh.cs.washington.edu/},
 }
 
 @inproceedings{10.1145/3586183.3606779,
@@ -60,7 +68,9 @@ keywords = {Spatial computing, binaural target sound extraction, attention, eara
 location = {San Francisco, CA, USA},
 series = {UIST '23},
 selected = {true},
-preview = {semantichearing.png}
+preview = {semantichearing.png},
+pdf = {semantichearing.pdf},
+website = {https://semantichearing.cs.washington.edu/},
 }
 
 @article{Itani2023,
@@ -81,7 +91,9 @@ issn={2041-1723},
 doi={10.1038/s41467-023-40869-8},
 url={https://doi.org/10.1038/s41467-023-40869-8},
 selected = {true},
-preview = {SwarmRetraction.gif}
+preview = {SwarmRetraction.gif},
+pdf = {acousticswarm.pdf},
+website = {https://acousticswarm.cs.washington.edu/},
 }
 
 @inproceedings{10.1145/3581791.3596856,
@@ -102,7 +114,8 @@ keywords = {acoustic sensing, mobile health, wearable technologies, wireless ear
 location = {Helsinki, Finland},
 series = {MobiSys '23},
 selected = {true},
-preview = {oaebuds.png}
+preview = {oaebuds.png},
+pdf = {oaebuds.pdf}
 }
 
 @inproceedings{veluri2023real,
@@ -115,5 +128,7 @@ preview = {oaebuds.png}
   organization={IEEE},
   selected = {false},
   abstract = {We present the first neural network model to achieve real-time and streaming target sound extraction. To accomplish this, we propose Waveformer, an encoder-decoder architecture with a stack of dilated causal convolution layers as the encoder, and a transformer decoder layer as the decoder. This hybrid architecture uses dilated causal convolutions for processing large receptive fields in a computationally efficient manner, while also leveraging the generalization performance of transformer-based architectures. Our evaluations show as much as 2.2–3.3 dB improvement in SI-SNRi compared to the prior models for this task while having a 1.2–4x smaller model size and a 1.5–2x lower runtime. We provide code, dataset, and audio samples: https://waveformer.cs.washington.edu/.},
-  preview = {waveformer.png}
+  preview = {waveformer.png},
+  pdf={waveformer.pdf},
+  website={https://waveformer.cs.washington.edu/}
 }
