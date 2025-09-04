@@ -1,6 +1,48 @@
 ---
 ---
 
+@misc{itani2025wirelesshearablesprogrammablespeech,
+      title={Wireless Hearables With Programmable Speech AI Accelerators}, 
+      author={Malek Itani and Tuochao Chen and Arun Raghavan and Gavriel Kohlberg and Shyamnath Gollakota},
+      year={2025},
+      eprint={2503.18698},
+      archivePrefix={arXiv},
+      primaryClass={cs.SD},
+      url={https://arxiv.org/abs/2503.18698}, 
+      abstract = {The conventional wisdom has been that designing ultra-compact, battery-constrained wireless hearables with on-device speech AI models is challenging due to the high computational demands of streaming deep learning models. Speech AI models require continuous, real-time audio processing, imposing strict computational and I/O constraints. We present NeuralAids, a fully on-device speech AI system for wireless hearables, enabling real-time speech enhancement and denoising on compact, battery-constrained devices. Our system bridges the gap between state-of-the-art deep learning for speech enhancement and low-power AI hardware by making three key technical contributions: 1) a wireless hearable platform integrating a speech AI accelerator for efficient on-device streaming inference, 2) an optimized dual-path neural network designed for low-latency, high-quality speech enhancement, and 3) a hardware-software co-design that uses mixed-precision quantization and quantization-aware training to achieve real-time performance under strict power constraints. Our system processes 6 ms audio chunks in real-time, achieving an inference time of 5.54 ms while consuming 71.6 mW. In real-world evaluations, including a user study with 28 participants, our system outperforms prior on-device models in speech quality and noise suppression, paving the way for next-generation intelligent wireless hearables that can enhance hearing entirely on-device.},
+      pdf = {neuralaids.pdf},
+      preview = {neuralaid.png},
+      selected = {true},
+}
+
+@misc{itani2025tfmlpnettinyrealtimeneural,
+      title={TF-MLPNet: Tiny Real-Time Neural Speech Separation}, 
+      author={Malek Itani and Tuochao Chen and Shyamnath Gollakota},
+      year={2025},
+      eprint={2508.03047},
+      archivePrefix={arXiv},
+      primaryClass={cs.SD},
+      url={https://arxiv.org/abs/2508.03047}, 
+      abstract = {Speech separation on hearable devices can enable transformative augmented and enhanced hearing capabilities. However, state-of-the-art speech separation networks cannot run in real-time on tiny, low-power neural accelerators designed for hearables, due to their limited compute capabilities. We present TF-MLPNet, the first speech separation network capable of running in real-time on such low-power accelerators while outperforming existing streaming models for blind speech separation and target speech extraction. Our network operates in the time-frequency domain, processing frequency sequences with stacks of fully connected layers that alternate along the channel and frequency dimensions, and independently processing the time sequence at each frequency bin using convolutional layers. Results show that our mixed-precision quantization-aware trained (QAT) model can process 6 ms audio chunks in real-time on the GAP9 processor, achieving a 3.5-4x runtime reduction compared to prior speech separation models.},
+      pdf = {tfmlpnet.pdf},
+      preview = {tfmlpnet.png},
+      selected = {true},
+}
+
+@inproceedings{itani25_interspeech,
+  title     = {{Neural Speech Extraction with Human Feedback}},
+  author    = {Malek Itani and Ashton Graves and Sefik {Emre Eskimez} and Shyamnath Gollakota},
+  year      = {2025},
+  booktitle = {Interspeech},
+  pages     = {4998--5002},
+  doi       = {10.21437/Interspeech.2025-214},
+  issn      = {2958-1796},
+  abstract = {We present the first neural target speech extraction (TSE) system that uses human feedback for iterative refinement. Our approach allows users to mark specific segments of the TSE output, generating an edit mask. The refinement system then improves the marked sections while preserving unmarked regions. Since large-scale datasets of human-marked errors are difficult to collect, we generate synthetic datasets using various automated masking functions and train models on each. Evaluations show that models trained with noise power-based masking (in dBFS) and probabilistic thresholding perform best, aligning with human annotations. In a study with 22 participants, users showed a preference for refined outputs over baseline TSE. Our findings demonstrate that human-in-the-loop refinement is a promising approach for improving the performance of neural speech extraction.},
+  pdf = {neural_speech_extraction.pdf},
+  preview = {fgtse.png},
+  selected = {true},
+}
+
 @article{chen2024hearable,
   title={Hearable devices with sound bubbles},
   author={Chen, Tuochao and Itani, Malek and Eskimez, Sefik Emre and Yoshioka, Takuya and Gollakota, Shyamnath},
