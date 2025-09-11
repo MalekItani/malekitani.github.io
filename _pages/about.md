@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Co-Founder, <a href='https://www.hearvana.ai'>Hearvana.ai</a> <br> University of Washington <a href='https://ece.uw.edu'>ECE</a>/<a href='https://cs.washington.edu'>CSE</a>
+subtitle: <a href='https://www.hearvana.ai'>Hearvana.ai</a> <br> University of Washington <a href='https://ece.uw.edu'>ECE</a>/<a href='https://cs.washington.edu'>CSE</a>
 
 profile:
   align: right
