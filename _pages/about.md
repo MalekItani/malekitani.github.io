@@ -5,8 +5,8 @@ permalink: /
 subtitle: <a href='https://www.hearvana.ai'>Hearvana.ai</a> <br> University of Washington <a href='https://ece.uw.edu'>ECE</a>/<a href='https://cs.washington.edu'>CSE</a>
 
 profile:
-  align: right
-  image: prof_pic.jpg
+  align: left
+  image: prof_pic2.jpg
   image_circular: true # crops the image to make it circular
   address: >
     <p>CSE 314</p>
